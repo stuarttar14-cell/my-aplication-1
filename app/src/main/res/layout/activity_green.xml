@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5D6A7"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message from Blue:"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- תצוגת ההודעה שהתקבלה מ-Blue -->
+    <TextView
+        android:id="@+id/tvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginBottom="32dp"
+        android:minHeight="40dp" />
+
+    <!-- שדה הקלט לשליחת הודעה ל-Blue -->
+    <EditText
+        android:id="@+id/etGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Message to Blue:"
+        android:inputType="text"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/btnGoToBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO TO BLUE" />
+
+</LinearLayout>
